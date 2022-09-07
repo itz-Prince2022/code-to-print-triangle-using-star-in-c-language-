@@ -1,0 +1,85 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+void printTriangle(int totalrows);
+
+int main()
+
+{  int totalrows;
+
+printf("Enter the number :");
+
+	scanf("%d",&totalrows);	printTriangle(totalrows);
+
+	printTriangle(totalrows);
+
+	printTriangle(totalrows);
+
+    printTriangle(totalrows);
+
+//	printTriangle(totalrows);
+
+//	printTriangle(totalrows);	
+
+return 0;	
+
+}	
+
+	
+
+	void printTriangle(int totalrows)
+
+	{ 
+
+	/*program for reverse trianfle*/
+
+	for(int row=totalrows;row>=1;row--)//row in triangle
+
+	{  for(int space=1;space<=totalrows-row;space++) //space in triangle
+
+	{ printf(" ");
+
+		} 
+
+		for (int star=2*row-1;star>=1;star--)//star on triangle
+
+		{  textcolor(YELLOW);
+
+			cprintf("*");
+
+			}
+
+		printf("\n");
+
+		}
+
+		/*program for straight triangle*/
+
+		for(int row=2;row<=totalrows;row++)//row on triangle
+
+		{
+
+			for(int space=1;space<=totalrows-row;space++)//space in trianlge
+
+			{
+
+				printf(" ");
+
+			}
+
+				for (int star=1;star<=2*row-1;star++)// star in triangle
+
+				{ textcolor(YELLOW);
+
+					cprintf("*");		
+
+				}
+
+			printf("\n");
+
+				
+
+			}
+
+}
